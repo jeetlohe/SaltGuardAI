@@ -25,7 +25,7 @@ class GraniteAgent:
         api_key    = os.getenv("IBM_API_KEY")
         project_id = os.getenv("IBM_PROJECT_ID")
         wml_url    = os.getenv("IBM_WML_URL", "https://us-south.ml.cloud.ibm.com")
-        model_id   = os.getenv("WATSONX_MODEL_ID", "meta-llama/llama-3-3-70b-instruct")
+        model_id   = os.getenv("WATSONX_MODEL_ID", "ibm/granite-3-2-8b-instruct")
 
         if not api_key:
             raise ValueError("IBM_API_KEY is not set in .env")
